@@ -1,0 +1,90 @@
+# Enhanced JTAG VIP .gitignore
+
+# Build directories
+build/
+coverage/
+waves/
+logs/
+docs/api/
+
+# Simulator specific files
+## Questa/ModelSim
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vstf
+*.ucdb
+
+## VCS
+simv*
+*.vpd
+*.vdb
+csrc/
+.vcs_lib
+DVEfiles/
+
+## Xcelium/IES
+IESLIB/
+xcelium.d/
+xrun.history
+xrun.log
+xmvlog.log
+xmelab.log
+xmsim.log
+
+# Waveform files
+*.vcd
+*.fsdb
+*.shm/
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Editor specific files
+.vscode/
+.idea/
+*.sublime-*
+
+# Doxygen generated files
+docs/html/
+docs/latex/
+
+# Compiled object files
+*.o
+*.so
+*.a
+
+# Core dumps
+core
+
+# Dependency files
+*.d
+
+# Patch files
+*.patch
+*.diff
+
+# Merge files
+*.orig
+*.rej
+
+# Coverage files
+*.gcov
+*.gcda
+*.gcno
+
+# Specific to this project
+# Add any project-specific files to ignore here

@@ -1,15 +1,26 @@
-fndef JTAG_TB_PKG__SVH
- `define JTAG_TB_PKG__SVH
+//=============================================================================
+// File: jtag_tb_pkg.svh
+// Description: Enhanced JTAG VIP Testbench Package
+// Author: Enhanced JTAG VIP Team
+// Date: 2024
+// Version: 2.0
+//=============================================================================
+
+`ifndef JTAG_TB_PKG_SVH
+`define JTAG_TB_PKG_SVH
 
 package jtag_tb_pkg;
   
+  // Import UVM package
   import uvm_pkg::*;
-`include "uvm_macros.svh"
-  typedef virtual jtag_if jtag_vif; 
-`include "jtag_if_proxy.svh"
-`include "jtag_vip.svh"
-`include "jtag_test_lib.svh"
+  `include "uvm_macros.svh"
   
-endpackage // jtag_tb_pkg
+  // Virtual interface typedef
+  typedef virtual jtag_if jtag_vif;
   
-`endif
+  // Include all VIP components
+  `include "jtag_vip.svh"
+  
+endpackage : jtag_tb_pkg
+
+`endif // JTAG_TB_PKG_SVH
